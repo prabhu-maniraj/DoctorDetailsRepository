@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="495" started-at="2016-07-27T20:13:57Z" finished-at="2016-07-27T20:13:57Z">
+    <groups>
+    </groups>
+    <test name="DoctorInfoTest" duration-ms="495" started-at="2016-07-27T20:13:57Z" finished-at="2016-07-27T20:13:57Z">
+      <class name="com.doctorDetails.DoctorDashboardTest">
+        <test-method status="PASS" signature="retrieveDoctorInfoUsingInvalidInput(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.doctorDetails.DoctorDashboardTest@5474c6c]" name="retrieveDoctorInfoUsingInvalidInput" duration-ms="419" started-at="2016-07-27T13:13:57Z" data-provider="invalidInput" finished-at="2016-07-27T13:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xxxxc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value is-null="true"/>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[[]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveDoctorInfoUsingInvalidInput -->
+        <test-method status="FAIL" signature="retrieveDoctorInfoUsingName(java.lang.String, java.lang.String)[pri:0, instance:com.doctorDetails.DoctorDashboardTest@5474c6c]" name="retrieveDoctorInfoUsingName" duration-ms="21" started-at="2016-07-27T13:13:57Z" data-provider="doctorName" finished-at="2016-07-27T13:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Prabhu Maniraj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"Area":"Fremont","Speciality":"ENT Doctor","Insurance":"Atenna","Gender":"Male","Name":"Prabhu Maniraj","Ratings":3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.doctorDetails.DoctorDashboardTest.retrieveDoctorInfoUsingName(DoctorDashboardTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveDoctorInfoUsingName -->
+        <test-method status="FAIL" signature="retrieveDoctorInfoUsingValidInput(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.doctorDetails.DoctorDashboardTest@5474c6c]" name="retrieveDoctorInfoUsingValidInput" duration-ms="18" started-at="2016-07-27T13:13:57Z" data-provider="validInput" finished-at="2016-07-27T13:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Prabhu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ears]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fremont]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Atenna]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{"Area":"Fremont","Speciality":"ENT Doctor","Insurance":"Atenna","Gender":"Female","Name":"Prabhu Maniraj","Ratings":3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.doctorDetails.DoctorDashboardTest.retrieveDoctorInfoUsingValidInput(DoctorDashboardTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveDoctorInfoUsingValidInput -->
+      </class> <!-- com.doctorDetails.DoctorDashboardTest -->
+    </test> <!-- DoctorInfoTest -->
+  </suite> <!-- Suite1 -->
+</testng-results>
